@@ -29,27 +29,51 @@
 
         <div class="container">
             <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
                 <h3 class="text-muted">parse project</h3>
             </div>
-
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
+            <div class="row login">
+                <div class="col-md-4 col-md-offset-5">
+                     <button type="button" class="login-btn btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Login</button>
+                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                             <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                           </div>
+                           <div class="modal-body">
+                                <div class="input-group">
+                                  <input type="text" class="form-control js-username" placeholder="Username">
+                                </div>
+                                <div class="input-group">
+                                  <input type="text" class="form-control js-password" placeholder="password">
+                                </div>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-primary modal-save-btn" data-dismiss="modal">Save changes</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                </div>
+            </div>
+            <div class="row top-row">
+                <div class="col-md-10 col-md-offset-1 main">
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+            </div>
+            <div class="row list-row">
+                <div class="col-md-10 list-main">
+                    <div class="todo-item"></div>
+                </div>
             </div>
 
-            <div class="row marketing">
-                
-            </div>
-
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
+            
 
         </div>
 
