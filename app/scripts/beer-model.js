@@ -1,5 +1,5 @@
-var Beer = Parse.Object.extend("Beer");
+var User = Parse.Object.extend("User");
 
-var BeersCollection = Parse.Collection.extend({
-	model: Beer
+var UsersCollection = Parse.Collection.extend({
+	model: User
 });
